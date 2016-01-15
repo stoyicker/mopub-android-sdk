@@ -838,8 +838,7 @@ public class MraidController {
                 Preconditions.checkState(mDefaultAdContainer.isAttachedToWindow());
             }
 
-            mRootView = (ViewGroup) mDefaultAdContainer.getRootView().findViewById(
-                    android.R.id.content);
+            mRootView = (ViewGroup) mDefaultAdContainer.getRootView();
         }
 
         return mRootView;
